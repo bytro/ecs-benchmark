@@ -1,4 +1,4 @@
-import { defineBinarySchema, ProtoWorld as World } from './dist/ecstasy.js';
+import { defineBinarySchema, World } from './dist/ecstasy.js';
 
 /** @typedef {import('./dist/ecstasy').Id} Id */
 
