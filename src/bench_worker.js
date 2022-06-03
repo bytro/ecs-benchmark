@@ -11,9 +11,11 @@ let fn = await setup(workerData.config);
 let cycle_n = 1;
 let cycle_ms = 0;
 let cycle_total_ms = 0;
+const cycle_duration_ms = 500;
+// const cycle_duration_ms = 1;
 
 // Run multiple cycles to get an estimate
-while (cycle_total_ms < 500) {
+while (cycle_total_ms < cycle_duration_ms) {
   let elapsed = bench_iter(fn, cycle_n);
   cycle_ms = elapsed / cycle_n;
   cycle_n *= 2;
@@ -21,7 +23,7 @@ while (cycle_total_ms < 500) {
 }
 
 // Try to estimate the iteration count for 500ms
-let target_n = 500 / cycle_ms;
+let target_n = cycle_duration_ms / cycle_ms;
 let total_ms = bench_iter(fn, target_n);
 
 parentPort.postMessage({
