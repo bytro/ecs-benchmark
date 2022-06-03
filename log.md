@@ -1,20 +1,20 @@
 
 # storage
 
-| op/s | entity_cycle | add_remove |
-| ---- | --: |--: |
-| bitecs | 1,669 | 2,549 |
-| ecstasy | 4,064 | 2,634 |
-| harmony-ecs | 4,199 | 4,142 |
-| piecs | 62,062 | 19,427 |
-| wolf-ecs | 2,600 | 4,059 |
+| op/s        | entity_cycle | add_remove |
+| ----------- | -----------: | ---------: |
+| bitecs      |        1,669 |      2,549 |
+| ecstasy     |        4,064 |      2,634 |
+| harmony-ecs |        4,199 |      4,142 |
+| piecs       |       62,062 |     19,427 |
+| wolf-ecs    |        2,600 |      4,059 |
 
 # queries
 
-| op/s | entity_cycle | add_remove |
-| ---- | --: |--: |
-| bitecs | 1,718 | 2,535 |
-| ecstasy | 3,623 | 4,049 |
-| harmony-ecs | 3,566 | 4,087 |
-| piecs | 60,113 | 20,001 |
-| wolf-ecs | 2,566 | 4,054 |
+| op/s        | packed_5 | simple_iter | frag_iter | entity_cycle | add_remove |
+| ----------- | -------: | ----------: | --------: | -----------: | ---------: |
+| bitecs      |  278,049 |     106,270 |   429,919 |        1,697 |      2,518 |
+| ecstasy     |    7,824 |       2,576 |     6,665 |        3,654 |      4,151 |
+| harmony-ecs |  293,174 |     129,693 |   474,079 |        3,948 |      4,081 |
+| piecs       |  329,102 |     165,392 |   436,431 |       61,639 |     20,158 |
+| wolf-ecs    |  372,358 |     163,773 |   533,825 |        2,584 |      4,048 |
