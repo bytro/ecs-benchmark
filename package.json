@@ -7,8 +7,8 @@
     "deps": "npx npm-check -upE"
   },
   "dependencies": {
-    "@javelin/ecs": "0.22.0",
-    "@lastolivegames/becsy": "0.8.4",
+    "@javelin/ecs": "1.0.0-alpha.13",
+    "@lastolivegames/becsy": "0.11.0",
     "bitecs": "0.3.34",
     "ecsy": "0.4.2",
     "geotic": "4.1.6",
@@ -16,7 +16,7 @@
     "harmony-ecs": "0.0.12",
     "miniplex": "^0.9.0",
     "perform-ecs": "0.7.8",
-    "picoes": "1.0.0",
+    "picoes": "1.1.0-rc0",
     "piecs": "0.4.0",
     "tiny-ecs": "2.0.0",
     "uecs": "0.4.2",
