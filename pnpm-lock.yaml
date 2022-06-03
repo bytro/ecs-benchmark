@@ -1,0 +1,146 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@javelin/ecs': 1.0.0-alpha.13
+  '@lastolivegames/becsy': 0.11.0
+  '@types/node': ^16.9.1
+  bitecs: 0.3.34
+  ecsy: 0.4.2
+  geotic: 4.1.6
+  goodluck: 7.0.0
+  harmony-ecs: 0.0.12
+  miniplex: ^0.9.0
+  perform-ecs: 0.7.8
+  picoes: 1.1.0-rc0
+  piecs: 0.4.0
+  prettier: ^2.5.1
+  tiny-ecs: 2.0.0
+  uecs: 0.4.2
+  wolf-ecs: 2.1.2
+
+dependencies:
+  '@javelin/ecs': 1.0.0-alpha.13
+  '@lastolivegames/becsy': 0.11.0
+  bitecs: 0.3.34
+  ecsy: 0.4.2
+  geotic: 4.1.6
+  goodluck: 7.0.0
+  harmony-ecs: 0.0.12
+  miniplex: 0.9.2
+  perform-ecs: 0.7.8
+  picoes: 1.1.0-rc0
+  piecs: 0.4.0
+  tiny-ecs: 2.0.0
+  uecs: 0.4.2
+  wolf-ecs: 2.1.2
+
+devDependencies:
+  '@types/node': 16.11.24
+  prettier: 2.5.1
+
+packages:
+
+  /@hmans/signal/0.1.8:
+    resolution: {integrity: sha512-jhTe89A0Fzp0aRcQdB1F9Z1gDqFNFS5kZohbk/EiQqvcVJqfJ5XG0IsSEZiyAT7RuiLXupwbAn7MxXVL+iZZIA==}
+    dev: false
+
+  /@javelin/core/1.0.0-alpha.12:
+    resolution: {integrity: sha512-U3KgZjpMNwO6SF1cVcn4XedpE+AE17aaoNr1S6W973qF7MBrfhRaeoEMjiPM5U2g9VxBJMr4rD9XzZRtyZPaYA==}
+    dev: false
+
+  /@javelin/ecs/1.0.0-alpha.13:
+    resolution: {integrity: sha512-TzBOEtDtb8SEsH1Kpjp3fkmLN81/XTXm4N0S3eWBn05bPYCkqr9iHTREIZT2KPz4URaaMnIqzWSE+slXNegeZA==}
+    dependencies:
+      '@javelin/core': 1.0.0-alpha.12
+      '@javelin/isomorphic-utils': 1.0.0-alpha.12
+    dev: false
+
+  /@javelin/isomorphic-utils/1.0.0-alpha.12:
+    resolution: {integrity: sha512-TBz3kD75v3QOdibJWCShVjexhhor1e+p4lHprQM+wq27HneDKz1e1JjZd8dY4N916fwgCaMgV/p1FYTtfw+Tng==}
+    dev: false
+
+  /@lastolivegames/becsy/0.11.0:
+    resolution: {integrity: sha512-+S5xUr6QA56WOiQ+ekf8P1pLdAqu+WcWDnHtI3J49yd/vKAtkfuV8GQiCxabMEgV/RwDQOYtbG2sv5TAVE/3eQ==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /@types/node/16.11.24:
+    resolution: {integrity: sha512-Ezv33Rl4mIi6YdSHfIRNBd4Q9kUe5okiaw/ikvJiJDmuQZNW5kfdg7+oQPF8NO6sTcr3woIpj3jANzTXdvEZXA==}
+    dev: true
+
+  /bitecs/0.3.34:
+    resolution: {integrity: sha512-WFtNl+7rthxnrNcuQbvnGjOvXYRkOlyz0x/BWZ2a1nJC/k8z6zksDX1B+AH1KH9JqT11V8SzlECAmpcCM+Hkow==}
+    dev: false
+
+  /camelcase/6.0.0:
+    resolution: {integrity: sha512-8KMDF1Vz2gzOq54ONPJS65IvTUaB1cHJ2DMM7MbPmLZljDH1qpzzLsWdiN9pHh6qvkRVDTi/07+eNGch/oLU4w==}
+    engines: {node: '>=10'}
+    dev: false
+
+  /ecsy/0.4.2:
+    resolution: {integrity: sha512-dVKOkuz1IsRvS7GlHcWghUtMZzXr70h6b+SQEHlKy2RgsCRNDzdYr6a43Q6HafuquA/67YFZCQt8zqadq/jlLA==}
+    dev: false
+
+  /geotic/4.1.6:
+    resolution: {integrity: sha512-5dxwkMiN+vHHBe5pPqWtoxR0acx0OglgSl1rXtr+0TZRMUEcVv1JLJF7IIB1s93x7J+x9HjsrTSVeBy05+9G7g==}
+    dependencies:
+      camelcase: 6.0.0
+      nanoid: 3.1.3
+    dev: false
+
+  /goodluck/7.0.0:
+    resolution: {integrity: sha512-ml0lMI5CGXkSHRg7Po3wpyNm0qMDshrquiXEVFdAYyehvh8qT5SsQuLvK+T6YjUMJE27d1EkqVhNBp1ufsZEZA==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
+  /harmony-ecs/0.0.12:
+    resolution: {integrity: sha512-he27c8UUVi3TeCGYxMMQ0q7L+Y5xWTiA7UZXvt2h/97pnRUle0aJtdToTKPKXmb3ulqfo8+otun+iqPxzH2CEg==}
+    engines: {node: '>=14.18.1'}
+    dev: false
+
+  /miniplex/0.9.2:
+    resolution: {integrity: sha512-38ZjpnGXrMjEd07IqHr03PrbIj8kjEV+3ma9phUvwRLW7u0AJywvnHcdz8rU+vqIpDVD9I1l7lbwwT03xCM5IA==}
+    dependencies:
+      '@hmans/signal': 0.1.8
+    dev: false
+
+  /nanoid/3.1.3:
+    resolution: {integrity: sha512-Zw8rTOUfh6FlKgkEbHiB1buOF2zOPOQyGirABUWn+9Z7m9PpyoLVkh6Ksc53vBjndINQ2+9LfRPaHxb/u45EGg==}
+    hasBin: true
+    dev: false
+
+  /perform-ecs/0.7.8:
+    resolution: {integrity: sha512-+4WYfCW6/ZVYQDF+78RJc7oWmK2dqtfsdDRfB/kyiHfbQfRIWldJqn2hpQt0ByDWQgtFQrMGGpED1S9wQj3WOw==}
+    dev: false
+
+  /picoes/1.1.0-rc0:
+    resolution: {integrity: sha512-vGzqfmL7TsmEbmekdjJByvsKbKT7WnVAhZtTD7lV0EsGx9NO9ag0WghyNKnYlzQk4QNQfRwK9klQyEDXKbe0kA==}
+    dev: false
+
+  /piecs/0.4.0:
+    resolution: {integrity: sha512-NiGuWHykjFCahsYzn7U3+Q0nk9wUr0wITRioTVCZkK6nk8P4Px/arWYviezyMDT5OaqNmLg4eL00Udj4txlhrQ==}
+    dev: false
+
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /tiny-ecs/2.0.0:
+    resolution: {integrity: sha1-lmuB+UqXXasI1GCmkdYl90wpVBw=}
+    dependencies:
+      typedef: 1.0.4
+    dev: false
+
+  /typedef/1.0.4:
+    resolution: {integrity: sha1-+DOIgWkWBk2UYAjZrrKXyqq/ODs=}
+    dev: false
+
+  /uecs/0.4.2:
+    resolution: {integrity: sha512-oPwSibOqllZeBu6U2v/wkqIq/XSiwaf0bff1aJhuPEBOqRWuo8iH/RP+bzPPUDdwQ6vRljIkksy0plmEIfbc3w==}
+    dev: false
+
+  /wolf-ecs/2.1.2:
+    resolution: {integrity: sha512-QZauvxSA29+hzbbn+6re0AbKP46hLvwjxGw9PlInBK9VJPACIEZivsJyeDX+zMkztYpKG0eDnKJwcbIPrfEEgw==}
+    dev: false
