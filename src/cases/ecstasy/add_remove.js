@@ -1,6 +1,4 @@
-import { defineBinarySchema, World } from './dist/ecstasy.js';
-
-/** @typedef {import('./dist/ecstasy').Id} Id */
+import { not, defineBinarySchema, World } from './dist/ecstasy.js';
 
 function exec(name, fn) {
     // name = 0;
@@ -12,56 +10,24 @@ function exec(name, fn) {
 /** @param {number} count */
 export default function (count) {
     const world = new World({ initialTableCapacity: count });
-
     const A = defineBinarySchema('int32');
     const B = defineBinarySchema('int32');
-
-    /** @type {Id[]} */
-    const entities = [];
-    const queryA = entities;
-    const queryB = entities;
+    const queryA = world.createQuery([A], not(B));
+    const queryAB = world.createQuery([A, B]);
 
     exec(0 && 'xtc:add_remove create', () => {
         for (let i = 0; i < count; i++) {
-            entities.push(world.createEntity([A], i));
+            world.createEntity([A], i);
         }
     });
 
-    // const count2 = 1_000_000;
-    // const world2 = new World({ initialTableCapacity: count2 });
-    // const entities2 = [];
-    // const queryA2 = entities2;
-    // const queryB2 = entities2;
-    // exec('T xtc:add_remove create', () => {
-    //     for (let i = 0; i < count2; i++) {
-    //         entities2.push(world2.createEntity([A], i));
-    //     }
-    // });
-    // exec('T xtc:add_remove add', () => {
-    //     for (let i = queryA2.length - 1; i >= 0; --i) {
-    //         const id = queryA2[i];
-    //         world2.addComponent(id, B, 0);
-    //     }
-    // });
-    // exec('T xtc:add_remove remove', () => {
-    //     for (const id of queryB2) {
-    //         world2.removeComponent(id, B);
-    //     }
-    // });
-
-    // console.log(world2.store.stat.map(x => (x * 1000).toFixed(3)).join(', '));
-
     function add() {
-        // for (const id of queryA) {
-        for (let i = queryA.length - 1; i >= 0; --i) {
-            const id = queryA[i];
-            world.addComponent(id, B, 0);
+        for (const e of queryA) {
+            world.addComponent(e.id(), B, 0);
         }
     }
     function remove() {
-        for (const id of queryB) {
-        // for (let i = queryB.length - 1; i >= 0; --i) {
-        //     const id = queryB[i];
+        for (const id of [...queryAB.ids()]) {
             world.removeComponent(id, B);
         }
     }
